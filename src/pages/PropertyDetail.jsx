@@ -2,13 +2,15 @@ import React from "react";
 import botanik from "../assets/images/botanik.jpg"
 import sala from "../assets/images/sala.jpg"
 import recibidor from "../assets/images/recibidor.jpg"
-import {AiOutlineHeart} from "react-icons/ai";
+import {AiOutlineHeart}  from "react-icons/ai";
 import {AiFillFire} from "react-icons/ai";
 import{MdOutlineWatchLater} from "react-icons/md";
 import {FaRegEye} from "react-icons/fa";
 import {BiBed} from "react-icons/bi";
 import{GiBathtub} from "react-icons/gi";
 import{GiHomeGarage} from "react-icons/gi";
+import {AiOutlineUser} from "react-icons/ai";
+
 
 const PropertyDetail = () => {
   return <div>
@@ -89,6 +91,51 @@ const PropertyDetail = () => {
 
 
 </div>
+
+<div>
+  <div className="bg-gray-200">
+    <h1>Departamento</h1>
+    <h1>en venta, bosque</h1>
+    <h1>1880m2</h1>
+
+<div className="flex  lg:ml-5 md:ml-3">
+<div className="flex mt-3 m-3 ">
+<h1 className="mt-1 bg-gray-200 px-1 py-1 lg:text-3xl"><BiBed/></h1>
+<h1 className="bg-blue-200 px-1 lg:text-3xl  mt-1">3</h1>
+</div>
+
+<div className="flex mt-3 m-3 ">
+<h1 className="mt-1 bg-gray-200 lg:text-3xl  px-1 py-1"><GiBathtub/></h1>
+<h1 className="bg-blue-200 px-1 lg:text-3xl   mt-1" >3</h1>
+</div>
+
+<div className="flex mt-3 m-3 ">
+<h1 className="mt-1 bg-gray-200 lg:text-3xl  px-1 py-1"><GiHomeGarage/></h1>
+<h1 className="bg-blue-200 px-1 lg:text-3xl  mt-1">3</h1>
+</div>
+
+</div>
+
+<div className="flex">
+<h1 className="bg-verdes">$2,300,000</h1>
+<h1 className="bg-verdes"> MXN</h1>
+</div>
+
+ <h1>Contacta con el vendedor</h1>
+ 
+ <div className="form-control">
+  <label className="input-group input-group-md">
+    <span><AiOutlineUser/></span>
+    <input type="text" placeholder="NOMBRE" className="input input-bordered input-md bg-gray-200  border-solid" />
+  </label>
+</div>
+
+
+
+
+  </div>
+</div>
+
 
 
     </div>
