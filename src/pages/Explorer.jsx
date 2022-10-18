@@ -311,7 +311,7 @@ const Explorer = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 ml-5">
         {data.map((item, index) => {
           return (
-            <div className="flex justify-center ">
+            <div className="flex justify-center " >
               <div className="card w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img src={item.fotos} alt="Shoes" className="h-52 w-full" />
