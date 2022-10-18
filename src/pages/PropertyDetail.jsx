@@ -1,5 +1,7 @@
 import React from "react";
 import botanik from "../assets/images/botanik.jpg"
+import sala from "../assets/images/sala.jpg"
+import recibidor from "../assets/images/recibidor.jpg"
 import {AiOutlineHeart} from "react-icons/ai";
 import {AiFillFire} from "react-icons/ai";
 import{MdOutlineWatchLater} from "react-icons/md";
@@ -40,7 +42,7 @@ const PropertyDetail = () => {
 <h1 className="text-verdes font-bold text-xl md:text-4xl md:-mt-6 md:mr-3 lg:text-7xl  lg:-mt-7 lg:mr-5">2,300,000</h1>
 </div>
 
-<div className="flex  lg:ml-5">
+<div className="flex  lg:ml-5 md:ml-3">
 <div className="flex mt-3 m-3 ">
 <h1 className="mt-1 bg-gray-200 px-1 py-1 lg:text-3xl"><BiBed/></h1>
 <h1 className="bg-blue-200 px-1 lg:text-3xl  mt-1">3</h1>
@@ -68,7 +70,28 @@ const PropertyDetail = () => {
 
       
     </div>
-    <div>card</div>
+
+
+
+    <div>
+
+<div className="flex space-x-0">
+    <div className="card card-compact w-48 md:w-96 lg:w-5/12  lg:ml-5 md:ml-6 m-3 bg-base-100 shadow-xl">
+    <img src={sala}/>
+    </div>
+
+    <div className="card card-compact h-16 w-28 md:w-60 md:h-40 lg:w-2/12 lg:h-3/5  lg:ml-5 md:ml-6 m-3  bg-base-100 shadow-xl">
+    <img src={recibidor}/>
+    </div>
+
+
+
+
+
+</div>
+
+
+    </div>
     <div>finS</div>
 
   </div>;
