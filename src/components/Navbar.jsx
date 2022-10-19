@@ -4,6 +4,7 @@ import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaFacebookF, FaPlus, FaTiktok } from "react-icons/fa";
 import Drawer from "../components/navbar/Drawer";
 
+
 const Navbar = () => {
   const [showLogo, setShowLogo] = useState(true);
   const handleShowLogo = (e) => {
@@ -15,18 +16,18 @@ const Navbar = () => {
   console.log(showLogo);
   return (
     <>
-      <div className="drawer z-0">
+      <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           <div className="navbar pl-0 flex justify-between">
-            <div className="z-10">
+            <div className="">
               <Drawer
                 handleShowLogo={handleShowLogo}
                 handleShowLogot={handleShowLogoT}
               />
             </div>
             {showLogo ? (
-              <div className="flex-1 z-0">
+              <div className="flex-1 ">
                 <a className="btn btn-ghost normal-case text-xl text-zinc-50">
                   CasaFintech
                 </a>
@@ -36,7 +37,7 @@ const Navbar = () => {
             )}
 
             <div className="mr-10">
-              <div className="flex-none mr-4 md:mr-7 lg:mr-10 z-0">
+              <div className="flex-none mr-4 md:mr-7 lg:mr-10 ">
                 <div className="dropdown dropdown-hover">
                   <label
                     tabIndex={0}

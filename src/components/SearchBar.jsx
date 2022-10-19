@@ -1,52 +1,29 @@
 import React from "react";
+import {AiOutlineSearch} from "react-icons/ai"
 
 const SearchBar = () => {
   return (
-    <div className="flex justify-center mx-64">
-      <div className="navbar bg-base-100">
-  <div className="navbar-start">
-    <div className="dropdown">
-      <label tabIndex={0} className="btn btn-ghost lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-      </label>
-      <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-        <li><a>Item 1</a></li>
-        <li tabIndex={0}>
-          <a className="justify-between">
-            Parent
-            <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
-          </a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
-    </div>
-    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
-  </div>
-  <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal p-0">
-      <li><a>Item 1</a></li>
-      <li tabIndex={0}>
-        <a>
-          Parent
-          <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-        </a>
-        <ul className="p-2">
-          <li><a>Submenu 1</a></li>
-          <li><a>Submenu 2</a></li>
-        </ul>
-      </li>
-      <li><a>Item 3</a></li>
-    </ul>
-  </div>
-  <div className="navbar-end">
-    <a className="btn">Get started</a>
+    <div className="mx-64 " >
+      <div className="navbar bg-slate-200 rounded-2xl h-5 opacity-75 w-full p-0 ">
+      <div className="form-control">
+  <div className="flex">
+    <div className="py-10"><AiOutlineSearch className="text-2xl text-black"/></div>
+    <input type="text" placeholder="Busqueda" className="outline-none  bg-slate-200 font-semibold text-lg border-0  text-black h-16 border-l-2 border-slate-300  border-r-0 border-t-0 border-b-0 mt- " />
   </div>
 </div>
-    </div>
+<select className="select select-ghost w-full max-w-xs font-semibold text-lg text-black rounded-none h-16 border-l-2 border-slate-300  border-r-0 border-t-0 border-b-0 outline-none">
+  <option disabled selected className="bg-slate-200">Categoria</option>
+  <option className="bg-slate-200 ">CASAS</option>
+  <option className="bg-slate-200">DEPARTAMENTOS</option>
+  <option className="bg-slate-200 ">LOFT</option>
+</select>
+<div className="">
+  <button className="btn btn-ghost font-semibold text-lg text-black rounded-none hover:bg-gray-600 hover:text-white h-16 border-l-2 border-slate-300  border-r-0 border-t-0 border-b-0">RENTAR</button>
+  <button className="btn btn-ghost font-semibold text-lg text-black  h-16 rounded-none hover:bg-gray-600 hover:text-white border-l-2 border-slate-300 rounded-r-xl w-36 border-r-0 border-t-0 border-b-0 ">COMPRAR</button>
+  
+</div>
+</div>
+</div>
   );
 };
 
