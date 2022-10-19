@@ -1,17 +1,24 @@
 import React, { useState } from "react";
 import { HiMenu } from "react-icons/hi";
-import { ImCross } from "react-icons/im";
 import { Link } from "react-router-dom";
+import {AiOutlineUser,AiOutlineHeart,AiOutlineCalculator,AiFillFire,AiOutlineClockCircle,AiOutlineSearch} from "react-icons/ai";
+import {GrDocumentText} from "react-icons/gr"
 
-const Drawer = () => {
-  const [showSidebar, setShowSidebar] = useState(false);
+const Drawer = ({handleShowLogo,handleShowLogot}) => {
+  const [showSidebar, setShowSidebar] = useState(false)
+
+
+
 
   const handleShow = (e) => {
     setShowSidebar(true);
+    handleShowLogo();
+    
   };
 
   const handleShowNone = (e) => {
     setShowSidebar(false);
+    handleShowLogot();
   };
   return (
     <>
@@ -41,37 +48,58 @@ const Drawer = () => {
 
             <li className="font-semibold">
               <Link to="/explorer" className="w-full">
-                <a>PERFIL</a>
+                <a className="flex justify-between w-full">
+                  PERFIL
+                  <AiOutlineUser className="text-xl" />
+                </a>
               </Link>
             </li>
             <li className="font-semibold">
               <Link to="/explorer" className="w-full">
-                <a>FAVORITOS</a>
+                <a className="flex justify-between w-full">
+                  FAVORITOS
+                  <AiOutlineHeart className="text-xl"/>
+                </a>
               </Link>
             </li>
             <li className="font-semibold">
               <Link to="/explorer" className="w-full">
-                <a>CALCULADORA</a>
+                <a className="flex justify-between w-full">
+                  CALCULADORA
+                  <AiOutlineCalculator  className="text-xl"/>
+                </a>
               </Link>
             </li>
             <li className="font-semibold">
               <Link to="/explorer" className="w-full">
-                <a>LO MAS VISTO</a>
+                <a className="flex justify-between w-full">
+                  LO MAS VISTO
+                  <AiFillFire className="text-xl"/>
+                </a>
               </Link>
             </li>
             <li className="font-semibold">
               <Link to="/explorer" className="w-full">
-                <a>NUEVAS PROPIEDADES</a>
+                <a className="flex justify-between w-full">
+                  NUEVAS PROPIEDADES
+                  <AiOutlineClockCircle className="text-xl"/>
+                  </a>
               </Link>
             </li>
             <li className="font-semibold">
               <Link to="/explorer" className="w-full">
-                <a>BLOG</a>
+                <a  className="flex justify-between w-full">
+                  BLOG
+                  <GrDocumentText  className="text-xl"/>
+                </a>
               </Link>
             </li>
             <li className="font-semibold">
               <Link to="/explorer" className="w-full">
-                <a>Explorar</a>
+                <a className="flex justify-between w-full">
+                  Explorar
+                  <AiOutlineSearch className="text-xl"/>
+                  </a>
               </Link>
             </li>
           </ul>

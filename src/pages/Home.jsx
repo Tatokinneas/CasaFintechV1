@@ -2,12 +2,12 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import SearchBar from "../components/SearchBar";
 import Footer from "../components/Footer";
-import Drawer from "../components/navbar/Drawer"
+
 const Home = () => {
   return (
-    <>
+    <div className="bg-slate-500 ">
       
-      <div id="main_container" className="bg-slate-900 h-screen -z-10">
+      <div id="main_container" className="bg-fondoHome h-screen ">
         <div id="nav_container">
           <Navbar />
         </div>
@@ -18,7 +18,7 @@ const Home = () => {
           <Footer />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
