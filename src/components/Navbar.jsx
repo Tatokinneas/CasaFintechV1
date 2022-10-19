@@ -2,15 +2,18 @@ import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
 import { FaFacebookF, FaTiktok } from "react-icons/fa";
+import Drawer from "../components/navbar/Drawer"
+
 const Navbar = () => {
   return (
     <>
       <div className="drawer">
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
-          <div className="navbar ">
-            <div className="flex-none"></div>
+          <div className="navbar pl-0">
+            
             <div className="flex-1">
+              <Drawer/>
               <a className="btn btn-ghost normal-case text-xl text-zinc-50">
                 CasaFintech
               </a>
