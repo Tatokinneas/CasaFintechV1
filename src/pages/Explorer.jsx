@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { MdLocationOn } from "react-icons/md";
-import Maps from "../components/explorer/Maps";
+import React, { useEffect, useState } from "react";
+import { AiFillFire, AiOutlineClockCircle } from "react-icons/ai";
 import { BiBed } from "react-icons/bi";
-import { TbBath } from "react-icons/tb";
+import { FiHeart } from "react-icons/fi";
 import { GiHomeGarage } from "react-icons/gi";
-import {FiHeart} from "react-icons/fi";
-import {AiFillFire,AiOutlineClockCircle} from "react-icons/ai"
+import { MdLocationOn } from "react-icons/md";
+import { TbBath } from "react-icons/tb";
+import Maps from "../components/explorer/Maps";
 
 const Explorer = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -73,7 +73,7 @@ const Explorer = () => {
   };
 
   useEffect(() => {
-    axios.get("https://cliente.casafintech.com/propiedad").then((response) => {
+    axios.get("http://cliente.casafintech.com/propiedad").then((response) => {
       setData(response.data);
       setIsLoading(false);
     });
@@ -311,51 +311,56 @@ const Explorer = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 ml-5">
         {data.map((item, index) => {
           return (
-            <div className="flex justify-center " >
+            <div className="flex justify-center ">
               <div className="card w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img src={item.fotos} alt="Shoes" className="h-52 w-full" />
                 </figure>
                 <div className="flex">
-                <div className="card-body px-5 py-0 mb-5">
-                  <div>
-                    <h1 className="font-bold">{item.name}</h1>
-                  </div>
-                  <div className="text-sm text-gray-700 font-semibold -mt-2">
-                    {item.address}
-                  </div>
-                  <div className="text-verdes text-2xl font-bold -mt-2">
-                    ${item.caract_properties[0].precio}.00
-                  </div>
-                  <div className="flex justify-between ">
-                    <div className="flex">
-                      <BiBed className="text-2xl   bg-slate-200 rounded-l-sm" />
-                      <div className="flex justify-center text-lg h-[24px] font-bold px-2  bg-slate-300 rounded-r-sm">
-                        {item.caract_properties[0].recamaras}
+                  <div className="card-body px-5 py-0 mb-5">
+                    <div>
+                      <h1 className="font-bold">{item.name}</h1>
+                    </div>
+                    <div className="text-sm text-gray-700 font-semibold -mt-2">
+                      {item.address}
+                    </div>
+                    <div className="text-verdes text-2xl font-bold -mt-2">
+                      ${item.caract_properties[0].precio}.00
+                    </div>
+                    <div className="flex justify-between ">
+                      <div className="flex">
+                        <BiBed className="text-2xl   bg-slate-200 rounded-l-sm" />
+                        <div className="flex justify-center text-lg h-[24px] font-bold px-2  bg-slate-300 rounded-r-sm">
+                          {item.caract_properties[0].recamaras}
+                        </div>
+                      </div>
+                      <div className="flex">
+                        <TbBath className="text-2xl   bg-slate-200 rounded-l-sm" />
+                        <div className="flex justify-center text-lg h-[24px] font-bold px-2  bg-slate-300 rounded-r-sm">
+                          {item.caract_properties[0].baños}
+                        </div>
+                      </div>
+                      <div className="flex">
+                        <GiHomeGarage className="text-2xl   bg-slate-200 rounded-l-sm" />
+                        <div className="flex justify-center text-lg h-[24px] font-bold px-2  bg-slate-300 rounded-r-sm">
+                          {item.caract_properties[0].parqueadero}
+                        </div>
                       </div>
                     </div>
-                    <div className="flex">
-                      <TbBath className="text-2xl   bg-slate-200 rounded-l-sm" />
-                      <div className="flex justify-center text-lg h-[24px] font-bold px-2  bg-slate-300 rounded-r-sm">
-                        {item.caract_properties[0].baños}
-                      </div>
-                    </div>
-                    <div className="flex">
-                      <GiHomeGarage className="text-2xl   bg-slate-200 rounded-l-sm" />
-                      <div className="flex justify-center text-lg h-[24px] font-bold px-2  bg-slate-300 rounded-r-sm">
-                        {item.caract_properties[0].parqueadero}
-                      </div>
-                    </div>
                   </div>
-                </div>
-                <div className="btn-group btn-group-vertical mt-5 mr-2 space-y-3">
-                  <button className=" p-0 bg-transparent hover:bg-transparent border-none "><FiHeart className="text-3xl text-purple-900"/></button>
-                  <button className=" p-0 bg-transparent hover:bg-transparent border-none"><AiFillFire className="text-3xl text-orange-500"/></button>
-                  <button className=" p-0 bg-transparent hover:bg-transparent border-none"><AiOutlineClockCircle className="text-3xl text-verdes"/></button>
-                </div>
+                  <div className="btn-group btn-group-vertical mt-5 mr-2 space-y-3">
+                    <button className=" p-0 bg-transparent hover:bg-transparent border-none ">
+                      <FiHeart className="text-3xl text-purple-900" />
+                    </button>
+                    <button className=" p-0 bg-transparent hover:bg-transparent border-none">
+                      <AiFillFire className="text-3xl text-orange-500" />
+                    </button>
+                    <button className=" p-0 bg-transparent hover:bg-transparent border-none">
+                      <AiOutlineClockCircle className="text-3xl text-verdes" />
+                    </button>
+                  </div>
                 </div>
               </div>
-              
             </div>
           );
         })}
