@@ -1,17 +1,18 @@
 import React from "react";
-import botanik from "../assets/images/botanik.jpg";
-import sala from "../assets/images/sala.jpg";
-import recibidor from "../assets/images/recibidor.jpg";
-import { AiOutlineHeart } from "react-icons/ai";
-import { AiFillFire } from "react-icons/ai";
-import { MdOutlineWatchLater } from "react-icons/md";
-import { FaRegEye } from "react-icons/fa";
-import { BiBed } from "react-icons/bi";
-import { GiBathtub } from "react-icons/gi";
-import { GiHomeGarage } from "react-icons/gi";
-import { AiOutlineUser } from "react-icons/ai";
-import { HiOutlineMail } from "react-icons/hi";
-import { MdSignalCellularAlt } from "react-icons/md";
+import botanik from "../assets/images/botanik.jpg"
+import sala from "../assets/images/sala.jpg"
+import recibidor from "../assets/images/recibidor.jpg"
+import {AiOutlineHeart}  from "react-icons/ai";
+import {AiFillFire} from "react-icons/ai";
+import{MdOutlineWatchLater} from "react-icons/md";
+import {FaRegEye} from "react-icons/fa";
+import {BiBed} from "react-icons/bi";
+import{GiBathtub} from "react-icons/gi";
+import{GiHomeGarage} from "react-icons/gi";
+import {AiOutlineUser} from "react-icons/ai";
+import {HiOutlineMail} from "react-icons/hi";
+import {MdSignalCellularAlt} from "react-icons/md";
+
 
 const PropertyDetail = () => {
   return (
@@ -96,46 +97,43 @@ const PropertyDetail = () => {
         </div>
       </div>
 
-      <div>
-        <div className="flex space-x-0 ">
-          <div className="card card-compact w-48 md:w-96 lg:w-5/12 lg:ml-5 md:ml-6 m-3 bg-base-100 shadow-xl">
-            <img src={sala} />
-          </div>
 
-          <div className="card card-compact h-16 w-28 md:w-60 md:h-40 lg:w-2/12 lg:h-3/5  lg:ml-5 md:ml-6 m-3  bg-base-100 shadow-xl">
-            <img src={recibidor} />
-          </div>
-        </div>
 
-        <div className="lg:flex justify-end lg:-mt-96">
-          <div className="bg-gray-200 w-72 rounded-lg md:rounded-lg lg:rounded-lg md:ml-44  m-12 md:w-96">
-            <div>
-              <div className="m-5  ">
-                <h1 className="font-bold text-lg md:text-2xl lg:text-4xl ">
-                  Departamento
-                </h1>
-                <h1 className="font-bold text-lg  md:text-2xl lg:text-4xl md:-mt-2 -mt-2 ">
-                  en venta, bosque
-                </h1>
-                <h1 className="font-bold text-lg md:text-2xl lg:text-4xl md:-mt-2 -mt-2 ">
-                  1880m2
-                </h1>
-                <h1 className="text-lg md:text-xl md:-mt-1 lg:text-3xl -mt-2">
-                  Dirección de la calle #12,
-                </h1>
-                <h1 className="text-lg md:text-xl md:-mt-1 lg:text-3xl -mt-3">
-                  colonia,C.P.
-                </h1>
-              </div>
-              <div className="flex  lg:ml-5 md:ml-3 -mt-6 m-2">
-                <div className="flex mt-3 m-3 ">
-                  <h1 className="mt-1 bg-gray-200 px-1 py-1 lg:text-3xl md:text-2xl">
-                    <BiBed />
-                  </h1>
-                  <h1 className="bg-blue-200 px-1 lg:text-3xl md:text-2xl mt-1">
-                    3
-                  </h1>
-                </div>
+<div>
+
+<div className="flex space-x-0 ">
+    <div className="card card-compact w-48 md:w-96 lg:w-5/12 lg:ml-5 md:ml-6 m-3 bg-base-100 shadow-xl">
+    <img src={sala}/>
+    </div>
+
+    <div className="card card-compact h-16 w-28 md:w-60 md:h-40 lg:w-2/12 lg:h-3/5  lg:ml-5 md:ml-6 m-3  bg-base-100 shadow-xl">
+    <img src={recibidor}/>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+<div className="lg:flex justify-end lg:-mt-96">
+<div className="bg-gray-200 w-72 rounded-lg md:rounded-lg lg:rounded-lg md:ml-44  m-12 md:w-96">
+  <div>
+    
+ <div className="m-5  " >
+    <h1 className="font-bold text-lg md:text-2xl lg:text-4xl ">Departamento</h1>
+    <h1 className="font-bold text-lg  md:text-2xl lg:text-4xl md:-mt-2 -mt-2 ">en venta, bosque</h1>
+    <h1 className="font-bold text-lg md:text-2xl lg:text-4xl md:-mt-2 -mt-2 ">1880m2</h1>
+    <h1 className="text-lg md:text-xl md:-mt-1 lg:text-3xl -mt-2">Dirección de la calle #12,</h1>
+    <h1 className="text-lg md:text-xl md:-mt-1 lg:text-3xl -mt-3">colonia,C.P.</h1>
+ </div>
+<div className="flex  lg:ml-5 md:ml-3 -mt-6 m-2">
+<div className="flex mt-3 m-3 ">
+<h1 className="mt-1 bg-gray-200 px-1 py-1 lg:text-3xl md:text-2xl"><BiBed/></h1>
+<h1 className="bg-blue-200 px-1 lg:text-3xl md:text-2xl mt-1">3</h1>
+</div>
 
                 <div className="flex mt-3 m-3 ">
                   <h1 className="mt-1 bg-gray-200 lg:text-3xl md:text-2xl px-1 py-1">
@@ -197,38 +195,61 @@ const PropertyDetail = () => {
                   </label>
                 </div>
 
-                <div className="form-control">
-                  <label className="input-group input-group-md">
-                    <span>
-                      <MdSignalCellularAlt className="md:text-2xl lg:text-4xl" />
-                    </span>
-                    <input
-                      type="text"
-                      placeholder="TELEFONO"
-                      className="input input-bordered input-md md:w-52 lg:w-62 bg-gray-200  border-solid"
-                    />
-                  </label>
-                </div>
-              </div>
-              <div className="-mt-2 m-7 lg:ml-11">
-                <textarea
-                  className="textarea textarea-bordered w-60  md:w-64 bg-gray-200  border-solid"
-                  placeholder="MENSAJE..."
-                ></textarea>
-              </div>
-              <div className="flex justify-center -mt-2 ">
-                <button className="btn glass bg-purple-800 hover:bg-purple-800 w-52 mb-10">
-                  CONTACTAR
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<div className="form-control">
+  <label className="input-group input-group-md">
+    <span><MdSignalCellularAlt className="md:text-2xl lg:text-4xl"/></span>
+    <input type="text" placeholder="TELEFONO" className="input input-bordered input-md md:w-52 lg:w-62 bg-gray-200  border-solid" />
+  </label>
+</div>
+</div>
 
-      <div>finS</div>
+<div className="-mt-2 m-7 lg:ml-11">
+<textarea className="textarea textarea-bordered w-60  md:w-64 bg-gray-200  border-solid" placeholder="MENSAJE..."></textarea>
+</div>
+<div className="flex justify-center -mt-2 ">
+<button className="btn glass bg-purple-800 hover:bg-purple-800 w-52 mb-10">CONTACTAR</button>
+</div>
+
+
+
+  </div>
+</div>
+</div>
+
+
+
     </div>
-  );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div>finS</div>
+
+  </div>;
 };
 
 export default PropertyDetail;
