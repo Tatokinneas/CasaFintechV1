@@ -31,11 +31,14 @@ const Drawer = () => {
           <ul className="menu h-screen  w-64 bg-gray-300 opacity-50 text-base-content ">
             {/* <!-- Sidebar content here --> */}
             {/* <button class="btn rounded-none">Cerrar sesion</button> */}
-            
-                <button  className="btn w-14 bg-gray-300 border-none hover:bg-none text-5xl text-white opacity-100 p-0 mt-5 ml-2" onClick={handleShowNone}>
-                    <HiMenu className="  "/>
-                </button>
-            
+
+            <button
+              className="btn w-14 bg-gray-300 border-none hover:bg-none text-5xl text-white opacity-100 p-0 mt-5 ml-2"
+              onClick={handleShowNone}
+            >
+              <HiMenu className="  " />
+            </button>
+
             <li className="font-semibold">
               <Link to="/explorer" className="w-full">
                 <a>PERFIL</a>

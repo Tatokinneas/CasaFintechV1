@@ -118,8 +118,8 @@ const PropertyDetail = () => {
 
 
 
-<div className="lg:flex justify-end lg:-mt-96">
-<div className="bg-gray-200 w-72 rounded-lg md:rounded-lg lg:rounded-lg md:ml-44  m-12 md:w-96">
+<div className="lg:flex justify-end lg:-mt-96 ">
+<div className="bg-gray-200 w-72 rounded-lg md:rounded-lg lg:rounded-lg md:ml-44  m-12 md:w-96 -mt-10">
   <div>
     
  <div className="m-5  " >
@@ -209,47 +209,13 @@ const PropertyDetail = () => {
 <div className="flex justify-center -mt-2 ">
 <button className="btn glass bg-purple-800 hover:bg-purple-800 w-52 mb-10">CONTACTAR</button>
 </div>
-
-
-
   </div>
 </div>
 </div>
-
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div>finS</div>
+</div>
 
-  </div>;
-};
+)};
 
 export default PropertyDetail;
