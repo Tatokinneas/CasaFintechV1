@@ -40,7 +40,7 @@ const Navbar = () => {
               <div className="flex-none mr-4 md:mr-7 lg:mr-10 z-0">
                 <div className="dropdown dropdown-hover">
                   <label tabIndex={0} className="btn btn-ghost w-7 md:w-14 lg:w-20 p-0 text-sm md:text-xl lg:text-3xl text-zinc-50">
-                  <AiOutlineUser />
+                  <AiOutlineUser className="font-bold" />
                   </label>
                   <ul
                     tabIndex={0}
