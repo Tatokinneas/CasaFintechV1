@@ -12,11 +12,13 @@ import{GiHomeGarage} from "react-icons/gi";
 import {AiOutlineUser} from "react-icons/ai";
 import {HiOutlineMail} from "react-icons/hi";
 import {MdSignalCellularAlt} from "react-icons/md";
+import {BsHouse} from "react-icons/bs";
 
 
 const PropertyDetail = () => {
   return (
     <div>
+
       <div>
         <img src={botanik} />
         <div className="flex justify-end">
@@ -97,9 +99,9 @@ const PropertyDetail = () => {
         </div>
       </div>
 
-
-
 <div>
+
+<div className="lg:mt-16">
 
 <div className="flex space-x-0 ">
     <div className="card card-compact w-48 md:w-96 lg:w-5/12 lg:ml-5 md:ml-6 m-3 bg-base-100 shadow-xl">
@@ -109,17 +111,54 @@ const PropertyDetail = () => {
     <div className="card card-compact h-16 w-28 md:w-60 md:h-40 lg:w-2/12 lg:h-3/5  lg:ml-5 md:ml-6 m-3  bg-base-100 shadow-xl">
     <img src={recibidor}/>
     </div>
+</div>
 
+<div className="flex space-x-5 ">
+<div className="card  bg-verdes text-primary-content w-40 md:w-80 lg:w-3/12 lg:ml-5 md:ml-6 m-3  shadow-xl">
+  <div className="card-body">
+    <h1 className=" text-xs -mt-5 md:text-xl lg:text-2xl">INFORMACIÓN GENERAL</h1>
+    <h1 className="text-sm md:text-xl">Área</h1>
+    <h1 className="font-bold text-xs -mt-3 md:text-lg">184 a 466</h1>
+    <h1 className="text-sm md:text-xl">Recámaras</h1>
+    <h1 className="font-bold text-xs -mt-3 md:text-lg">2 a 3</h1>
+    <h1 className="text-sm md:text-xl">Baños</h1>
+    <h1 className="font-bold text-xs -mt-3 md:text-lg">2.5 a 4.5</h1>
+    <h1 className="text-sm md:text-xl">Estacionamientos </h1>
+    <h1 className="font-bold text-xs -mt-3 md:text-lg">1 a 2</h1>
+  </div>
+</div>
 
+<div className="sm:flex sm:space-x-12">
+<div>
+<div className=" flex  space-x-2 mt-5">
+  <h1 className="text-verdes text-sm md:text-2xl">AMENIDADES </h1>
+  <h1 className="text-verdes md:text-2xl"><BsHouse/></h1>
 
+</div>
+<div>
+<h1 className="text-xs font-semibold mt-5 md:text-xl">GIMNASIO</h1>
+<h1 className="text-xs font-semibold md:text-xl">LUDOTECA</h1>
+<h1 className="text-xs font-semibold md:text-xl">ROOF GARDEN</h1>
+<h1 className="text-xs font-semibold md:text-xl">PLAYGROUND</h1>
+<h1 className="text-xs font-semibold md:text-xl">ALBERCA</h1>
+<h1 className="text-xs font-semibold md:text-xl">SALA DE EVENTOS</h1>
+<h1 className="text-xs font-semibold md:text-xl">CANCHAS</h1>
+</div>
+</div>
+</div>
 
+<div className="sm:mt-7">
+<h1 className="text-lg mt-4 font-semibold sm:text-2xl">Entrega desde</h1>
+<h1 className="font-bold -mt-2 text-right sm:text-xl sm:font-bold">Agosto 2021</h1>
+</div>
 
 </div>
 
 
+</div>
 
 <div className="lg:flex justify-end lg:-mt-96 ">
-<div className="bg-gray-200 w-72 rounded-lg md:rounded-lg lg:rounded-lg md:ml-44  m-12 md:w-96 -mt-10">
+<div className="bg-gray-200 w-72 rounded-lg md:rounded-lg lg:rounded-lg md:ml-56  m-12 md:w-96 lg:-mt-96">
   <div>
     
  <div className="m-5  " >
@@ -212,8 +251,33 @@ const PropertyDetail = () => {
   </div>
 </div>
 </div>
-    </div>
-    <div>finS</div>
+
+ </div>
+
+ <div className="lg:flex justify-end lg:mr-10">
+<div className="-mt-10 ">
+  <h1 className="text-center text-sm md:text-lg  ">Al hacer clic en "Eviar" aceptas nuestros Términos </h1>
+  <h1 className="text-center text-sm md:text-lg">y Condiciones ,Políticas de privacidad y</h1>
+  <h1 className="text-center text-sm md:text-lg"> recibir conmunicaciones de marketing</h1>
+</div>
+</div>
+
+<div>
+      <div className="lg:mt-14" >
+       <h1 className="ml-5 mt-5 text-verdes text-lg md:text-2xl md:ml-6 lg:text-4xl mb-5">Descripción</h1> 
+       <h1 className="ml-5 mr-3 md:text-lg md:ml-6">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod </h1>
+       <h1 className="ml-5 mr-3 md:text-lg md:ml-6">tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</h1>
+       <h1 className="ml-5 mr-3 md:text-lg md:ml-6">exerci tation ullamcorper suscipit lobor tis nisl ut aliquip ex ea commodo consequat.</h1>
+       <h1 className="ml-5 mr-3 md:text-lg md:ml-6">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, </h1>
+       <h1 className="ml-5 mr-3 md:text-lg md:ml-6">vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit .</h1>
+       <h1 className="ml-5 mr-3 md:text-lg md:ml-6" >praesent luptatum zzril delenit augue duis dolore te feugait nulla faci lisi</h1>
+       <h1 className="ml-5 mr-3 md:text-lg md:ml-6 md:mb-9 mb-5 mt-3"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh eu</h1>
+      </div>
+</div>
+
+  
+
+
 </div>
 
 )};
