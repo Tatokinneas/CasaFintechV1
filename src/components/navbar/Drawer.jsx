@@ -1,19 +1,22 @@
 import React, { useState } from "react";
+import {
+  AiFillFire,
+  AiOutlineCalculator,
+  AiOutlineClockCircle,
+  AiOutlineHeart,
+  AiOutlineSearch,
+  AiOutlineUser,
+} from "react-icons/ai";
+import { GrDocumentText } from "react-icons/gr";
 import { HiMenu } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import {AiOutlineUser,AiOutlineHeart,AiOutlineCalculator,AiFillFire,AiOutlineClockCircle,AiOutlineSearch} from "react-icons/ai";
-import {GrDocumentText} from "react-icons/gr"
 
-const Drawer = ({handleShowLogo,handleShowLogot}) => {
-  const [showSidebar, setShowSidebar] = useState(false)
-
-
-
+const Drawer = ({ handleShowLogo, handleShowLogot }) => {
+  const [showSidebar, setShowSidebar] = useState(false);
 
   const handleShow = (e) => {
     setShowSidebar(true);
     handleShowLogo();
-    
   };
 
   const handleShowNone = (e) => {
@@ -32,7 +35,7 @@ const Drawer = ({handleShowLogo,handleShowLogot}) => {
       <div className="" onClick={handleShowNone}>
         <div
           className={`top-0 left-0   fixed    duration-300 ${
-            showSidebar ? "translate-y-0 " : "translate-y-full"
+            showSidebar ? "translate-x-0" : "-translate-x-full"
           }`}
         >
           <ul className="menu h-screen  w-64 bg-gray-300 opacity-50 text-base-content ">
@@ -58,7 +61,7 @@ const Drawer = ({handleShowLogo,handleShowLogot}) => {
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   FAVORITOS
-                  <AiOutlineHeart className="text-xl"/>
+                  <AiOutlineHeart className="text-xl" />
                 </a>
               </Link>
             </li>
@@ -66,7 +69,7 @@ const Drawer = ({handleShowLogo,handleShowLogot}) => {
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   CALCULADORA
-                  <AiOutlineCalculator  className="text-xl"/>
+                  <AiOutlineCalculator className="text-xl" />
                 </a>
               </Link>
             </li>
@@ -74,7 +77,7 @@ const Drawer = ({handleShowLogo,handleShowLogot}) => {
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   LO MAS VISTO
-                  <AiFillFire className="text-xl"/>
+                  <AiFillFire className="text-xl" />
                 </a>
               </Link>
             </li>
@@ -82,15 +85,15 @@ const Drawer = ({handleShowLogo,handleShowLogot}) => {
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   NUEVAS PROPIEDADES
-                  <AiOutlineClockCircle className="text-xl"/>
-                  </a>
+                  <AiOutlineClockCircle className="text-xl" />
+                </a>
               </Link>
             </li>
             <li className="font-semibold">
               <Link to="/explorer" className="w-full">
-                <a  className="flex justify-between w-full">
+                <a className="flex justify-between w-full">
                   BLOG
-                  <GrDocumentText  className="text-xl"/>
+                  <GrDocumentText className="text-xl" />
                 </a>
               </Link>
             </li>
@@ -98,8 +101,8 @@ const Drawer = ({handleShowLogo,handleShowLogot}) => {
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   Explorar
-                  <AiOutlineSearch className="text-xl"/>
-                  </a>
+                  <AiOutlineSearch className="text-xl" />
+                </a>
               </Link>
             </li>
           </ul>

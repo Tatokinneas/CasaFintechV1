@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { AiOutlineUser,AiOutlinePoweroff } from "react-icons/ai";
+import { AiOutlinePoweroff, AiOutlineUser } from "react-icons/ai";
 import { BsInstagram, BsTwitter } from "react-icons/bs";
-import { FaFacebookF, FaTiktok,FaPlus } from "react-icons/fa";
+import { FaFacebookF, FaPlus, FaTiktok } from "react-icons/fa";
 import Drawer from "../components/navbar/Drawer";
-
 
 const Navbar = () => {
   const [showLogo, setShowLogo] = useState(true);
@@ -35,12 +34,15 @@ const Navbar = () => {
             ) : (
               ""
             )}
-           
+
             <div className="mr-10">
               <div className="flex-none mr-4 md:mr-7 lg:mr-10 z-0">
                 <div className="dropdown dropdown-hover">
-                  <label tabIndex={0} className="btn btn-ghost w-7 md:w-14 lg:w-20 p-0 text-sm md:text-xl lg:text-3xl text-zinc-50">
-                  <AiOutlineUser className="font-bold" />
+                  <label
+                    tabIndex={0}
+                    className="btn btn-ghost w-7 md:w-14 lg:w-20 p-0 text-sm md:text-xl lg:text-3xl text-zinc-50"
+                  >
+                    <AiOutlineUser className="font-bold" />
                   </label>
                   <ul
                     tabIndex={0}
@@ -49,30 +51,29 @@ const Navbar = () => {
                     <li>
                       <a className="flex justify-between font-semibold text-[12px] md:text-xs ">
                         INICIA SESIÓN
-                        <AiOutlinePoweroff/>
+                        <AiOutlinePoweroff />
                       </a>
-                      
                     </li>
                     <li>
                       <a className="flex justify-between font-semibold text-[12px] md:text-xs">
                         REGISTRATE
-                        <FaPlus/>
+                        <FaPlus />
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div className="flex-none ">
-                <button className="btn btn-ghost w-7 md:w-14 lg:w-20 p-0 -mr-2 md:-mr-5 lg:-mr-10 text-sm md:text-xl lg:text-3xl text-zinc-50">
-                  <FaFacebookF />
+                <button className=" w-7 md:w-14 lg:w-20 -px-10 -mr-2 md:-mr-5 lg:-mr-10 text-sm md:text-xl lg:text-3xl text-zinc-50">
+                  <FaFacebookF className="-px-10" />
                 </button>
-                <button className="btn btn-ghost w-7 md:w-14 lg:w-20 p-0 -mr-2 md:-mr-5 lg:-mr-10 text-sm md:text-xl lg:text-3xl text-zinc-50">
+                <button className=" w-7 md:w-14 lg:w-20 p-0 -mr-2 md:-mr-5 lg:-mr-10 text-sm md:text-xl lg:text-3xl text-zinc-50">
                   <BsInstagram />
                 </button>
-                <button className="btn btn-ghost w-7 md:w-14 lg:w-20 p-0 -mr-2 md:-mr-5 lg:-mr-10 text-sm md:text-xl lg:text-3xl text-zinc-50">
+                <button className=" w-7 md:w-14 lg:w-20 p-0 -mr-2 md:-mr-5 lg:-mr-10 text-sm md:text-xl lg:text-3xl text-zinc-50">
                   <FaTiktok />
                 </button>
-                <button className="btn btn-ghost w-7 md:w-14 lg:w-20 p-0 text-sm md:text-xl lg:text-3xl text-zinc-50">
+                <button className=" w-7 md:w-14 lg:w-20 p-0 text-sm md:text-xl lg:text-3xl text-zinc-50">
                   <BsTwitter />
                 </button>
               </div>
