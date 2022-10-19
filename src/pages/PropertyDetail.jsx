@@ -148,8 +148,8 @@ const PropertyDetail = () => {
 </div>
 
 <div className="sm:mt-7">
-<h1 className="text-lg mt-4 font-semibold sm:text-2xl">Entrega desde</h1>
-<h1 className="font-bold -mt-2 text-right sm:text-xl sm:font-bold">Agosto 2021</h1>
+<h1 className="text-xs mt-4 font-semibold sm:text-2xl">Entrega desde</h1>
+<h1 className=" text-xs mr-2  mt-2 font-bold  text-right sm:text-xl sm:font-bold">Agosto 2021</h1>
 </div>
 
 </div>
