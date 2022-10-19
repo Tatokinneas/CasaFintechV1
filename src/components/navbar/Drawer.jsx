@@ -18,14 +18,14 @@ const Drawer = () => {
       {showSidebar ? (
         ""
       ) : (
-        <button className="text-3xl text-white" onClick={handleShow}>
+        <button className="text-4xl text-white ml-10" onClick={handleShow}>
           <HiMenu />
         </button>
       )}
-      <div className=" z-40" onClick={handleShowNone}>
+      <div className="" onClick={handleShowNone}>
         <div
-          className={`top-0 left-0 w-[35vw]  fixed   ease-in-out duration-300 ${
-            showSidebar ? "translate-x-0 " : "translate-x-full"
+          className={`top-0 left-0   fixed    duration-300 ${
+            showSidebar ? "translate-y-0 " : "translate-y-full"
           }`}
         >
           <ul className="menu h-screen  w-64 bg-gray-300 opacity-50 text-base-content ">

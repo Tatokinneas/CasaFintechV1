@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       
-      <div id="main_container" className="bg-slate-900 h-screen z-0">
+      <div id="main_container" className="bg-slate-900 h-screen -z-10">
         <div id="nav_container">
           <Navbar />
         </div>
