@@ -87,7 +87,10 @@ const Explorer = () => {
 
   return (
     <>
-    <div className="grid grid-cols-1 lg:flex m-5">
+    <div className="">
+    <NavNoHome />
+    </div>
+    <div className="grid grid-cols-1 lg:flex m-5 mt-2 ">
       <div className="card w-full h-[625px] lg:w-96 mr-5 my-5 bg-gray-200 shadow-xl  lg:sticky top-5  ">
         <div className="overflow-auto">
           <div className="card-body p-4">
