@@ -4,7 +4,7 @@ import {AiOutlineSearch} from "react-icons/ai"
 const SearchBar = () => {
   return (
     <div className="mx-60 " >
-      <div className="navbar bg-slate-200 rounded-2xl h-5 opacity-75 w-full p-0 grid lg:grid-cols-4 grid-cols-1 ">
+      <div className="navbar bg-slate-200 rounded-2xl h-5 opacity-75  lg:w-full p-0 grid lg:grid-cols-4 grid-cols-1 ">
       <div className="form-control">
   <div className="flex">
     <div className="py-6 w-14 px-5"><AiOutlineSearch className="text-2xl font-bold text-black"/></div>

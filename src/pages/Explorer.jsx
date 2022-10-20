@@ -7,6 +7,7 @@ import { GiHomeGarage } from "react-icons/gi";
 import { MdLocationOn } from "react-icons/md";
 import { TbBath } from "react-icons/tb";
 import Maps from "../components/explorer/Maps";
+import Footer from "../components/Footer"
 
 const Explorer = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -84,6 +85,7 @@ const Explorer = () => {
   }
 
   return (
+    <>
     <div className="grid grid-cols-1 lg:flex m-5">
       <div className="card w-full h-[625px] lg:w-96 mr-5 my-5 bg-gray-200 shadow-xl  lg:sticky top-5  ">
         <div className="overflow-auto">
@@ -306,6 +308,7 @@ const Explorer = () => {
             </div>
           </div>
         </div>
+        
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 ml-5">
@@ -365,7 +368,10 @@ const Explorer = () => {
           );
         })}
       </div>
+
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 
