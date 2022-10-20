@@ -7,7 +7,8 @@ import { GiHomeGarage } from "react-icons/gi";
 import { MdLocationOn } from "react-icons/md";
 import { TbBath } from "react-icons/tb";
 import Maps from "../components/explorer/Maps";
-import Footer from "../components/Footer"
+import Footer from "../components/Footer";
+import NavNoHome from "../components/NavNoHome"
 
 const Explorer = () => {
   const [isLoading, setIsLoading] = useState(true);

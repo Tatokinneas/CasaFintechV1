@@ -7,7 +7,7 @@ import {BsTwitter} from "react-icons/bs";
 const Footer = () => {
   return (
     <>
-      <footer className="footer py-10 bg-cyan-900 -200 text-base-content relative">
+      <footer className="footer pb-5 pt-10 bg-cyan-900 -200 text-base-content relative">
         <div>
           
           <h1 className="text-2xl font-bold md:text-4xl text-white lg:text-8xl">
