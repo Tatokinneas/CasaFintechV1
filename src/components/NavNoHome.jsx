@@ -1,37 +1,42 @@
-import React from 'react'
-import { AiOutlineSearch } from 'react-icons/ai'
-import Drawer from "./navbar/Drawer"
+import React from "react";
+import { AiOutlineSearch } from "react-icons/ai";
+import Drawer from "./navbar/Drawer";
 
 const NavNoHome = () => {
   return (
-    <div className="navbar bg-fondoHome h-6">
-        <div className='z-50'>
-  <Drawer/>
-
+    <div className="navbar bg-fondoHome h-6 ">
+      <div className="z-50">
+        <Drawer />
+      </div>
+      <div>
+        <h1 className="text-3xl font-bold text-white -mt-2">casafintech</h1>
+        <h1 className="ml-8 font-medium text-white">SLOGAN FINTECH</h1>
+      </div>
+      <div className="ml-10">
+        <div className="form-control">
+          <label className="input-group input-group-sm">
+            <span>SM</span>
+            <input
+              type="text"
+              placeholder="Type here"
+              className="input input-bordered input-sm outline-none"
+            />
+          </label>
         </div>
-  <h1 className='text-3xl font-bold text-white -mt-2'>casafintech</h1>
-  <h1 className='ml-8 font-medium text-white'>SLOGAN FINTECH</h1>
-  <div className="navbar bg-slate-200 rounded-lg h-5 opacity-75  lg:w-full p-0 grid lg:grid-cols-4 grid-cols-1 ">
-      <div className="form-control">
-  <div className="flex">
-    <div className="w-14 px-5"><AiOutlineSearch className="text-xl font-bold text-black"/></div>
-    <input type="text" placeholder="Busqueda" className="outline-none  bg-slate-200 font-semibold text-lg border-0  text-black h-16 border-l-2 border-slate-300  border-r-0 border-t-0 border-b-0 w-48 pl-2" />
-  </div>
-</div>
-<select className="select select-ghost w-full max-w-xs font-semibold text-lg text-black rounded-none h-16 border-l-2 border-slate-300  border-r-0 border-t-0 border-b-0 outline-none -mt-2">
-  <option disabled selected className="bg-slate-200">Categoria</option>
-  <option className="bg-slate-200 ">CASAS</option>
-  <option className="bg-slate-200">DEPARTAMENTOS</option>
-  <option className="bg-slate-200 ">LOFT</option>
-</select>
+        <select className="select select-bordered w-full max-w-xs select-sm">
+          <option disabled selected>
+            Who shot first?
+          </option>
+          <option>Han Solo</option>
+          <option>Greedo</option>
+        </select>
+        <div className="flex">
+        <button className="btn btn-sm">Small</button>
+        <button className="btn btn-sm">Small</button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-  <button className="btn btn-ghost font-semibold text-lg text-black rounded-none hover:bg-gray-600 hover:text-white h-16 border-l-2 border-slate-300  border-r-0 border-t-0 border-b-0 -mt-2">RENTAR</button>
-  <button className="btn btn-ghost font-semibold text-lg text-black  h-16 rounded-none hover:bg-gray-600 hover:text-white border-l-2 border-slate-300 rounded-r-xl  border-r-0 border-t-0 border-b-0 -mt-2 ">COMPRAR</button>
-  
-
-</div>
-</div>
-  )
-}
-
-export default NavNoHome
+export default NavNoHome;
