@@ -16,6 +16,23 @@ import {BsHouse} from "react-icons/bs";
 
 
 const PropertyDetail = () => {
+  const [data, setData] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
+  const { index } = useLocation().state;
+  const [dataCard, setDataCard] = useState("");
+
+  useEffect(() => {
+    axios
+      .get("http://cliente.casafintech.com/propiedad/card" + 1)
+      .then((response) => response.data)
+      .then((data) => {
+        setDataCard(data);
+        setIsLoading(false);
+      });
+
+    axios.get("http://cliente.casafintech.com/propiedad" + 1);
+  }, []);
+
   return (
     <div>
 
