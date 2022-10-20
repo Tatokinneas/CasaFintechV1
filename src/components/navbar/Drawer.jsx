@@ -46,14 +46,14 @@ const Drawer = ({ handleShowLogo, handleShowLogot }) => {
               className="btn w-14 bg-gray-300 border-none hover:bg-none text-5xl text-white opacity-100 p-0 mt-5 ml-2"
               onClick={handleShowNone}
             >
-              <HiMenu className="  " />
+              <HiMenu className="" />
             </button>
 
             <li className="font-semibold">
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   PERFIL
-                  <AiOutlineUser className="text-xl" />
+                  <AiOutlineUser className="text-xl text-black" />
                 </a>
               </Link>
             </li>
@@ -61,7 +61,7 @@ const Drawer = ({ handleShowLogo, handleShowLogot }) => {
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   FAVORITOS
-                  <AiOutlineHeart className="text-xl" />
+                  <AiOutlineHeart className="text-xl text-black" />
                 </a>
               </Link>
             </li>
@@ -69,7 +69,7 @@ const Drawer = ({ handleShowLogo, handleShowLogot }) => {
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   CALCULADORA
-                  <AiOutlineCalculator className="text-xl" />
+                  <AiOutlineCalculator className="text-xl text-black" />
                 </a>
               </Link>
             </li>
@@ -77,7 +77,7 @@ const Drawer = ({ handleShowLogo, handleShowLogot }) => {
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   LO MAS VISTO
-                  <AiFillFire className="text-xl" />
+                  <AiFillFire className="text-xl text-black" />
                 </a>
               </Link>
             </li>
@@ -85,7 +85,7 @@ const Drawer = ({ handleShowLogo, handleShowLogot }) => {
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   NUEVAS PROPIEDADES
-                  <AiOutlineClockCircle className="text-xl" />
+                  <AiOutlineClockCircle className="text-xl text-black" />
                 </a>
               </Link>
             </li>
@@ -93,7 +93,7 @@ const Drawer = ({ handleShowLogo, handleShowLogot }) => {
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   BLOG
-                  <GrDocumentText className="text-xl" />
+                  <GrDocumentText className="text-xl text-black" />
                 </a>
               </Link>
             </li>
@@ -101,7 +101,7 @@ const Drawer = ({ handleShowLogo, handleShowLogot }) => {
               <Link to="/explorer" className="w-full">
                 <a className="flex justify-between w-full">
                   Explorar
-                  <AiOutlineSearch className="text-xl" />
+                  <AiOutlineSearch className="text-xl text-black" />
                 </a>
               </Link>
             </li>
