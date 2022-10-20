@@ -13,9 +13,6 @@ const Home = () => {
         <div id="search_container" className="z-50 -mt-96 ">
           <SearchBar />
         </div>
-        <div id="footer_container" className="mt-96">
-          <Footer />
-        </div>
       </div>
     
   );
