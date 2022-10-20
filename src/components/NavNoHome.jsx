@@ -31,8 +31,8 @@ const NavNoHome = () => {
           <option>Greedo</option>
         </select>
         <div className="flex">
-        <button className="btn btn-sm">Small</button>
-        <button className="btn btn-sm">Small</button>
+        <button className="btn btn-sm rounded-none bg-slate-200 border-none">Small</button>
+        <button className="btn btn-sm rounded-none bg-slate-200 border-none">Small</button>
         </div>
       </div>
     </div>

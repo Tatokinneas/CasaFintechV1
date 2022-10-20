@@ -374,7 +374,7 @@ const Explorer = () => {
       </div>
 
     </div>
-    <Footer></Footer>
+    
     </>
   );
 };
