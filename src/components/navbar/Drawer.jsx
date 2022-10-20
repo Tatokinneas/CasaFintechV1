@@ -38,7 +38,7 @@ const Drawer = ({ handleShowLogo, handleShowLogot }) => {
             showSidebar ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <ul className="menu h-screen  w-64 bg-gray-300 opacity-50 text-base-content ">
+          <ul className="menu h-screen  w-60 bg-gray-300 opacity-50 text-base-content ">
             {/* <!-- Sidebar content here --> */}
             {/* <button class="btn rounded-none">Cerrar sesion</button> */}
 

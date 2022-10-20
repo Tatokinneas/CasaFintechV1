@@ -20,7 +20,7 @@ const Navbar = () => {
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           <div className="navbar pl-0 flex justify-between">
-            <div className="">
+            <div className="z-50">
               <Drawer
                 handleShowLogo={handleShowLogo}
                 handleShowLogot={handleShowLogoT}
