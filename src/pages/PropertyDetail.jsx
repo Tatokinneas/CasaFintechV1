@@ -11,7 +11,9 @@ import { useParams } from "react-router-dom";
 import botanik from "../assets/images/botanik.jpg";
 import recibidor from "../assets/images/recibidor.jpg";
 import sala from "../assets/images/sala.jpg";
+import Footer from "../components/Footer";
 import NavNoHome from "../components/NavNoHome";
+import MortageCalculator from "../components/propertyDetail/MortageCalculator";
 
 const PropertyDetail = () => {
   const [data, setData] = useState("");
@@ -358,6 +360,12 @@ const PropertyDetail = () => {
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonummy nibh eu
           </h1>
+        </div>
+        <div>
+          <MortageCalculator price={200000} />
+        </div>
+        <div>
+          <Footer />
         </div>
       </div>
     </>
